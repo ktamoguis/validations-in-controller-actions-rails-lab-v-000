@@ -15,7 +15,7 @@ class PostsController < ApplicationController
       redirect_to post_path(@post)
     else
       flash[:error] = @post.errors.full_messages
-      @post1 = Post.find(params[:id])
+      #@post1 = Post.find(params[:id])
       binding.pry
       render edit
     end
