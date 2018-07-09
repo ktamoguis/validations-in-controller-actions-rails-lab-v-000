@@ -17,7 +17,7 @@ class PostsController < ApplicationController
       flash[:error] = @post.errors.full_messages
       #@post1 = Post.find(params[:id])
       binding.pry
-      render edit
+      render :edit
     end
   end
 
